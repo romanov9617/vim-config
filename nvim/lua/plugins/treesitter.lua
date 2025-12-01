@@ -1,6 +1,9 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+    branch = "master",
+    lazy = false,
+    build = ":TSUpdate",
     opts = {
       ensure_installed = {
         "python",
@@ -15,6 +18,8 @@ return {
         "sql",
       },
       highlight = { enable = true },
+      auto_install = true,
+      indent = { enable = true },
     },
   },
 }

@@ -19,6 +19,7 @@ return {
         nvimtree = true,
         treesitter = true,
         notify = false,
+        native_lsp = { enabled = true }, -- семантические токены LSP
         mini = {
           enabled = true,
           indentscope_color = "",
